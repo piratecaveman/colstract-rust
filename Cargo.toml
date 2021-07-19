@@ -9,7 +9,7 @@ authors = ["Pirate Caveman <piratecaveman@protonmail.com>"]
 [dependencies]
 serde_json = "1"
 handlebars = "4"
-xreader = { git = "https://github.com/piratecaveman/xreader", tag = "v0.1.0" }
 colordata = { git = "https://github.com/piratecaveman/colordata", tag = "v0.1.0" }
 toml = "0.5"
 serde = { version = "1", features = ["derive"] }
+regex = "1"

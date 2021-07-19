@@ -53,17 +53,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "colordata"
 version = "0.1.0"
-source = "git+https://github.com/piratecaveman/colordata?tag=v0.1.0#409abe544f637fd21b8b85a158c65562c852f861"
-dependencies = [
- "once_cell",
- "regex",
- "serde",
-]
-
-[[package]]
-name = "colordata"
-version = "0.1.0"
-source = "git+https://github.com/piratecaveman/colordata?branch=master#409abe544f637fd21b8b85a158c65562c852f861"
+source = "git+https://github.com/piratecaveman/colordata?tag=v0.1.0#0643d0e97505715d9566690b75e71079599d5d63"
 dependencies = [
  "once_cell",
  "regex",
@@ -74,12 +64,12 @@ dependencies = [
 name = "colstract"
 version = "0.1.0"
 dependencies = [
- "colordata 0.1.0 (git+https://github.com/piratecaveman/colordata?tag=v0.1.0)",
+ "colordata",
  "handlebars",
+ "regex",
  "serde",
  "serde_json",
  "toml",
- "xreader",
 ]
 
 [[package]]
@@ -329,12 +319,3 @@ name = "unicode-xid"
 version = "0.2.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "8ccb82d61f80a663efe1f787a51b16b5a51e3314d6ac365b08639f52387b33f3"
-
-[[package]]
-name = "xreader"
-version = "0.1.0"
-source = "git+https://github.com/piratecaveman/xreader?tag=v0.1.0#6a19d3e8d21838abde8c6c110d472cdad3229761"
-dependencies = [
- "colordata 0.1.0 (git+https://github.com/piratecaveman/colordata?branch=master)",
- "regex",
-]
