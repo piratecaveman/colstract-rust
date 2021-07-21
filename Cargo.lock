@@ -12,6 +12,11 @@ dependencies = [
 ]
 
 [[package]]
+name = "argumentparser"
+version = "0.1.0"
+source = "git+https://github.com/piratecaveman/argumentparser?branch=master#a3c3ff3fa70adbb586c3f923bf589ec751b41c88"
+
+[[package]]
 name = "block-buffer"
 version = "0.7.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -64,6 +69,7 @@ dependencies = [
 name = "colstract"
 version = "0.1.0"
 dependencies = [
+ "argumentparser",
  "colordata",
  "handlebars",
  "regex",
