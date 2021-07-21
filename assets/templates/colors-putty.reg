@@ -1,26 +1,26 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CURRENT_USER\Software\SimonTatham\PuTTY\Sessions\wal]
-"Colour0"="{{foreground_rgb}}"  ; Default Foreground
-"Colour1"="{{foreground_rgb}}"  ; Default Bold Foreground
-"Colour2"="{{background_rgb}}"  ; Default Background
-"Colour3"="{{background_rgb}}"  ; Default Bold Background
-"Colour4"="{{background_rgb}}"  ; Cursor Text
-"Colour5"="{{cursor_rgb}}"  ; Cursor Color
-"Colour6"="{{color0_rgb}}"  ; ANSI Black
-"Colour7"="{{color8_rgb}}"  ; ANSI Black Bold
-"Colour8"="{{color1_rgb}}"  ; ANSI Red
-"Colour9"="{{color9_rgb}}"  ; ANSI Red Bold
-"Colour10"="{{color2_rgb}}"  ; ANSI Green
-"Colour11"="{{color10_rgb}}"  ; ANSI Green Bold
-"Colour12"="{{color3_rgb}}"  ; ANSI Yellow
-"Colour13"="{{color11_rgb}}"  ; ANSI Yellow Bold
-"Colour14"="{{color4_rgb}}"  ; ANSI Blue
-"Colour15"="{{color12_rgb}}"  ; ANSI Blue Bold
-"Colour16"="{{color5_rgb}}"  ; ANSI Magenta
-"Colour17"="{{color13_rgb}}"  ; ANSI Magenta Bold
-"Colour18"="{{color6_rgb}}"  ; ANSI Cyan
-"Colour19"="{{color14_rgb}}"  ; ANSI Cyan Bold
-"Colour20"="{{color7_rgb}}"  ; ANSI White
-"Colour21"="{{color15_rgb}}"  ; ANSI White Bold
+"Colour0"="{{foreground_rgb_stripped}}"  ; Default Foreground
+"Colour1"="{{foreground_rgb_stripped}}"  ; Default Bold Foreground
+"Colour2"="{{background_rgb_stripped}}"  ; Default Background
+"Colour3"="{{background_rgb_stripped}}"  ; Default Bold Background
+"Colour4"="{{background_rgb_stripped}}"  ; Cursor Text
+"Colour5"="{{cursor_rgb_stripped}}"  ; Cursor Color
+"Colour6"="{{color0_rgb_stripped}}"  ; ANSI Black
+"Colour7"="{{color8_rgb_stripped}}"  ; ANSI Black Bold
+"Colour8"="{{color1_rgb_stripped}}"  ; ANSI Red
+"Colour9"="{{color9_rgb_stripped}}"  ; ANSI Red Bold
+"Colour10"="{{color2_rgb_stripped}}"  ; ANSI Green
+"Colour11"="{{color10_rgb_stripped}}"  ; ANSI Green Bold
+"Colour12"="{{color3_rgb_stripped}}"  ; ANSI Yellow
+"Colour13"="{{color11_rgb_stripped}}"  ; ANSI Yellow Bold
+"Colour14"="{{color4_rgb_stripped}}"  ; ANSI Blue
+"Colour15"="{{color12_rgb_stripped}}"  ; ANSI Blue Bold
+"Colour16"="{{color5_rgb_stripped}}"  ; ANSI Magenta
+"Colour17"="{{color13_rgb_stripped}}"  ; ANSI Magenta Bold
+"Colour18"="{{color6_rgb_stripped}}"  ; ANSI Cyan
+"Colour19"="{{color14_rgb_stripped}}"  ; ANSI Cyan Bold
+"Colour20"="{{color7_rgb_stripped}}"  ; ANSI White
+"Colour21"="{{color15_rgb_stripped}}"  ; ANSI White Bold
 

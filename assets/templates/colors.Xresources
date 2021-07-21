@@ -9,13 +9,13 @@ emacs*background:   {{background}}
 URxvt*foreground:   {{foreground}}
 XTerm*foreground:   {{foreground}}
 UXTerm*foreground:  {{foreground}}
-URxvt*background:   {{background.alpha}}
+URxvt*background:   [{{alpha_percentage}}]{{background}}
 XTerm*background:   {{background}}
 UXTerm*background:  {{background}}
 URxvt*cursorColor:  {{cursor}}
 XTerm*cursorColor:  {{cursor}}
 UXTerm*cursorColor: {{cursor}}
-URxvt*borderColor:  {{background.alpha}}
+URxvt*borderColor:  [{{alpha_percentage}}]{{background}}
 
 ! Colors 0-15.
 *.color0: {{color0}}
