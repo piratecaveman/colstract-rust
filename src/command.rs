@@ -6,8 +6,9 @@ pub fn run_command<T>(command: &[T]) -> Result<(), io::Error>
 where
     T: AsRef<OsStr>,
 {
-    let mut negotiator = Command::new("sh");
-    negotiator.args(command);
+    let program = &command[0];
+    let mut negotiator = Command::new(program);
+    negotiator.args(&command[1..]);
 
     let result = negotiator.output()?;
     println!(
