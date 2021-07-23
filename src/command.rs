@@ -11,9 +11,12 @@ where
     negotiator.args(&command[1..]);
 
     let result = negotiator.output()?;
-    println!(
-        "Output of the command: {}",
-        String::from_utf8_lossy(&result.stdout)
-    );
+    if !result.stdout.is_empty() {
+        println!("Stdout: {}", String::from_utf8_lossy(&result.stdout));
+    };
+
+    if !result.stderr.is_empty() {
+        eprintln!("Stderr: {}", String::from_utf8_lossy(&result.stderr))
+    };
     Ok(())
 }

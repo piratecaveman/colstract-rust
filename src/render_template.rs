@@ -1,13 +1,17 @@
+use std::path::Path;
+
 pub fn render_template(
     name: &str,
-    path: &str,
-    output_dir: &str,
+    path: &Path,
+    output_dir: &Path,
     data: &mut serde_json::Map<String, serde_json::Value>,
 ) -> Result<(), handlebars::RenderError> {
     let mut handler = handlebars::Handlebars::new();
     handler.register_template_file(name, path)?;
     let mut output = std::path::PathBuf::from(output_dir);
     if !output.exists() {
+        eprintln!("{} does not exist", output.display());
+        eprintln!("Creating {}", output.display());
         std::fs::create_dir_all(&output)?;
     };
     output = output.join(name);
@@ -18,6 +22,7 @@ pub fn render_template(
 
 #[test]
 fn lets_test() {
+    use std::path::PathBuf;
     let templates = [
         "colors",
         "colors.css",
@@ -84,8 +89,8 @@ fn lets_test() {
     for item in templates {
         render_template(
             item,
-            &format!("assets/templates/{}", item),
-            "/tmp/templates",
+            &PathBuf::from(&format!("assets/templates/{}", item)),
+            &PathBuf::from("/tmp/templates"),
             data,
         )
         .unwrap();

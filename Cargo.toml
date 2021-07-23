@@ -12,5 +12,6 @@ handlebars = "4"
 toml = "0.5"
 serde = { version = "1", features = ["derive"] }
 regex = "1"
-colordata = { git = "https://github.com/piratecaveman/colordata", tag = "v0.1.0" }
+colordata = { git = "https://github.com/piratecaveman/colordata", branch = "master" }
 argumentparser = { git = "https://github.com/piratecaveman/argumentparser", branch = "master" }
+text-colorizer = "1"

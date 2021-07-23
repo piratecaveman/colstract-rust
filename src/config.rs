@@ -416,12 +416,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             background_hex_stripped = self
                 .colors
-                .map(|f| f.background.hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.background.hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             background_hex8_stripped = self
                 .colors
-                .map(|f| f.background.hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.background.hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             background_rgb_stripped = self
                 .colors
                 .map(|f| f.background.rgb_stripped())
@@ -456,12 +456,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             foreground_hex_stripped = self
                 .colors
-                .map(|f| f.foreground.hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.foreground.hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             foreground_hex8_stripped = self
                 .colors
-                .map(|f| f.foreground.hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.foreground.hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             foreground_rgb_stripped = self
                 .colors
                 .map(|f| f.foreground.rgb_stripped())
@@ -496,12 +496,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             cursor_hex_stripped = self
                 .colors
-                .map(|f| f.cursor.hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.cursor.hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             cursor_hex8_stripped = self
                 .colors
-                .map(|f| f.cursor.hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.cursor.hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             cursor_rgb_stripped = self
                 .colors
                 .map(|f| f.cursor.rgb_stripped())
@@ -536,12 +536,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color0_hex_stripped = self
                 .colors
-                .map(|f| f.colors[0].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[0].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color0_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[0].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[0].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color0_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[0].rgb_stripped())
@@ -576,12 +576,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color1_hex_stripped = self
                 .colors
-                .map(|f| f.colors[1].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[1].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color1_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[1].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[1].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color1_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[1].rgb_stripped())
@@ -616,12 +616,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color2_hex_stripped = self
                 .colors
-                .map(|f| f.colors[2].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[2].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color2_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[2].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[2].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color2_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[2].rgb_stripped())
@@ -656,12 +656,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color3_hex_stripped = self
                 .colors
-                .map(|f| f.colors[3].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[3].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color3_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[3].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[3].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color3_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[3].rgb_stripped())
@@ -696,12 +696,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color4_hex_stripped = self
                 .colors
-                .map(|f| f.colors[4].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[4].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color4_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[4].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[4].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color4_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[4].rgb_stripped())
@@ -736,12 +736,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color5_hex_stripped = self
                 .colors
-                .map(|f| f.colors[5].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[5].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color5_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[5].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[5].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color5_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[5].rgb_stripped())
@@ -776,12 +776,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color6_hex_stripped = self
                 .colors
-                .map(|f| f.colors[6].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[6].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color6_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[6].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[6].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color6_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[6].rgb_stripped())
@@ -816,12 +816,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color7_hex_stripped = self
                 .colors
-                .map(|f| f.colors[7].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[7].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color7_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[7].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[7].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color7_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[7].rgb_stripped())
@@ -856,12 +856,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color8_hex_stripped = self
                 .colors
-                .map(|f| f.colors[8].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[8].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color8_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[8].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[8].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color8_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[8].rgb_stripped())
@@ -896,12 +896,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color9_hex_stripped = self
                 .colors
-                .map(|f| f.colors[9].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[9].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color9_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[9].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[9].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color9_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[9].rgb_stripped())
@@ -936,12 +936,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color10_hex_stripped = self
                 .colors
-                .map(|f| f.colors[10].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[10].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color10_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[10].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[10].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color10_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[10].rgb_stripped())
@@ -976,12 +976,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color11_hex_stripped = self
                 .colors
-                .map(|f| f.colors[11].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[11].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color11_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[11].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[11].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color11_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[11].rgb_stripped())
@@ -1016,12 +1016,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color12_hex_stripped = self
                 .colors
-                .map(|f| f.colors[12].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[12].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color12_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[12].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[12].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color12_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[12].rgb_stripped())
@@ -1056,12 +1056,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color13_hex_stripped = self
                 .colors
-                .map(|f| f.colors[13].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[13].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color13_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[13].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[13].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color13_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[13].rgb_stripped())
@@ -1096,12 +1096,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color14_hex_stripped = self
                 .colors
-                .map(|f| f.colors[14].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[14].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color14_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[14].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[14].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color14_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[14].rgb_stripped())
@@ -1136,12 +1136,12 @@ impl Config {
                 .unwrap_or_else(|| default.alpha_f32()),
             color15_hex_stripped = self
                 .colors
-                .map(|f| f.colors[15].hex().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[15].hex_stripped())
+                .unwrap_or_else(|| default.hex_stripped()),
             color15_hex8_stripped = self
                 .colors
-                .map(|f| f.colors[15].hex8().strip_prefix('#').unwrap().to_string())
-                .unwrap_or_else(|| default.hex8().strip_prefix('#').unwrap().to_string()),
+                .map(|f| f.colors[15].hex8_stripped())
+                .unwrap_or_else(|| default.hex8_stripped()),
             color15_rgb_stripped = self
                 .colors
                 .map(|f| f.colors[15].rgb_stripped())
