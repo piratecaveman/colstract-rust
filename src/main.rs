@@ -72,6 +72,14 @@ fn main() {
         collect_templates(&mut templates_paths, &path);
     }
 
+    if let Some(inp) = &(config.input) {
+        if config.colors.is_none() {
+            let new_config = Config::from(inp);
+            let colors = new_config.colors;
+            config.colors = colors;
+        };
+    };
+
     let output_directory = config.output_directory.clone().map_or_else(
         || {
             eprintln!(
@@ -143,6 +151,7 @@ fn main() {
 fn compose_config(parsed_arguments: &ParsedArguments, mut config: Config) -> Config {
     if let Some(argumentparser::Value::Word(inp)) = parsed_arguments.get_value("input") {
         config.input = Some(inp.clone());
+        config.colors = None;
     };
 
     if let Some(argumentparser::Value::Word(out)) = parsed_arguments.get_value("output") {
