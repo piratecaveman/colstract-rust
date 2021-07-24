@@ -130,6 +130,14 @@ fn main() {
             }
         };
     }
+
+    if let Some(wal) = &config.wallpaper {
+        if wal.command.is_some() {
+            if let Some(true) = &wal.enable {
+                wal.apply_wallpaper();
+            }
+        }
+    }
 }
 
 fn compose_config(parsed_arguments: &ParsedArguments, mut config: Config) -> Config {
