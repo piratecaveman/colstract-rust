@@ -1,10 +1,10 @@
-input = "/home/user/.Xresources"
-output_directory = "/home/user/.cache/colstract"
+# input = "/home/user/.Xresources"
+# output_directory = "/home/user/.cache/colstract"
 
 [wallpaper]
-enable = true
-path = "/home/user/Pictures/wall.png"
-command = ["feh", "--bg-fill", "/home/user/Pictures/wall.png"]
+enable = false
+# path = "/home/user/Pictures/wall.png"
+# command = ["feh", "--bg-fill", "/home/user/Pictures/wall.png"]
 
 [colors]
 color0 = "#242837"
